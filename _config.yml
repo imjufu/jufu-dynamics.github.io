@@ -23,7 +23,18 @@ description: >- # this means to ignore newlines until "baseurl:"
   La société jufu dynamics vous aide à concevoir, réaliser, et
   exploiter des services numériques.
 sass:
+  sass_dir: _sass
   style: compact
+
+navigation:
+  - title: À propos
+    url: /
+  - title: Expertises
+    url: /expertises/
+  - title: Portfolio
+    url: /portfolio/
+  - title: Contact
+    url: /contact/
 
 # Build settings
 # theme: minima

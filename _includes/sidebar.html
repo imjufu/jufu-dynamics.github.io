@@ -1,0 +1,19 @@
+<div class="barre-laterale">
+  <header>
+    <a href="/"><img src="/assets/images/logo.svg" alt="jufu dynamics" class="logo"></a>
+  </header>
+  <nav class="menu">
+    {% for nav in site.navigation %}
+      {% assign class = nil %}
+      {% if page.url == nav.url %}
+        {% assign class = 'active' %}
+      {% endif %}
+      <a href="{{ nav.url }}" class="{{ class }}">{{ nav.title }}</a>
+    {% endfor %}
+  </nav>
+  <nav class="mes-reseaux">
+    <a title="Blog" aria-label="Blog" href="https://imjufu.github.io/" target="_blank"><i class="fa-solid fa-book"></i></a>
+    <a title="Github" aria-label="Github" href="https://github.com/imjufu" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a title="LinkedIn" aria-label="LinkedIn" href="https://www.linkedin.com/in/julien-fusco/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  </nav>
+</div>

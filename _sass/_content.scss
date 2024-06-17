@@ -1,0 +1,15 @@
+.contenu {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  background-color: $white;
+  color: $black;
+  padding: 1.5rem;
+}
+
+@media only screen and (min-width: 49rem) {
+  .contenu {
+    margin-left: 18rem;
+    padding: 4rem;
+  }
+}
