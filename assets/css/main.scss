@@ -3,32 +3,9 @@
 # only Main files contain this front matter, not partials.
 ---
 
-body {
-  background-color: #bb2649;
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  font-family: 'HelveticaLTStd Roman', sans-serif;
-}
-
-.homepage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  .logo {
-    width: 40vh;
-  }
-}
-
-.not-found {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  h1 {
-    margin: 0;
-    font-size: 3em;
-  }
-}
+@import 'variables';
+@import 'layout';
+@import 'helpers';
+@import 'sidebar';
+@import 'content';
+@import 'pages';
