@@ -14,13 +14,12 @@ html {
 }
 
 body {
-  background-attachment: fixed;
-  background-color: $mainColor;
-  background-image: linear-gradient(to top, $black 85%, $mainColor);
-  color: $white;
+  background-color: $white;
+  color: $black;
 }
 
 h1 {
+  color: $mainColor;
   margin: 0 0 2rem;
   font-size: 1.8rem;
 }
@@ -36,7 +35,7 @@ h3 {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: $mainColor;
   &:focus-visible {
     outline: 0.5px solid $mainColor;
@@ -66,7 +65,8 @@ blockquote {
     font-size: 1.25rem;
   }
 
-  body {
-    background-image: linear-gradient(to top, $black 30%, $mainColor);
+  .page {
+    flex-direction: row;
+    height: 100vh;
   }
 }
